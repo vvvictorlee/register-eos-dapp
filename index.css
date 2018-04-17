@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-light-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-lightit-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-lightit-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-regular-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-regularit-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-regularit-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-medium-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-mediumit-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-mediumit-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/public/fonts/proximanova-semiboldit-webfont.woff2') format('woff2'),
+       url('/public/fonts/proximanova-semiboldit-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  line-height: 24px;
+  color: #605C6D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  background-attachment: fixed;
+  background-position: center center;
+  height:100%;
+}
+body > * {
+  width: 1200px;
+  position: relative;
+}
+
+.pane {
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  border-left: none;
+  border-right: none;
+}
+.pane + .pane {
+  border-top: none; margin-top: 0;
+  padding-top: 0;
+}
+
+.pane table th {
+  text-align: left;
+}
+
+.pane .info > table th {
+  color: #4B4E5D;
+  font-weight: 600;
+}
+
+.pane .pane-title {
+  color: #2B2933;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: linear-gradient(to top, #FFFFFF, #FCFCFC);
+}
+
+.account {
+  background: white;
+}
+
+.account .main-title {
+  text-align: center;
+  color: #393742;
+  line-height: 60px;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.account .info {
+  display: inline-block;
+}
+
+.account .buttons {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  width: 500px;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+}
+
+.account .buttons > div.row {
+  display: inline-block;
+}
+
+.account .buttons > div.row > div.button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.account .buttons > div.row > div.button > a {
+  color: #ffffff;
+  background: #443F54;
+  padding: 0px 5px;
+  border-radius: 2px;
+  border: 1px solid #443F54;
+  width: 234px;
+  display:block;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 44px;
+}
+.account .buttons > div.row > div.button > a:hover{
+  color: #ffffff;
+  background: #1A1724;
+  border-color: #1A1724;
+}
+
+.sales > table > thead > tr {
+  background: #FFFFFF;
+  border-bottom: 1px solid #C1CAD5;
+}
+
+.sales > table > tbody > tr:nth-child(odd) {
+  background: #FBFBFC;
+  border-bottom: 1px solid #F1F4F6;
+}
+
+.sales > table > tbody > tr:nth-child(even) {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEF1F4;
+}
+
+.sales > table {
+  font-size: 13px;
+}
+
+.sales > table tr > td {
+  border-bottom: 1px solid #F0EFEF;
+  text-align: left;
+}
+
+.sales > table th {
+  border-bottom: 1px solid #DAD9D9;
+  color: #393742;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.sales > table > tbody > tr.active {
+  background: #F2F6FA;
+  color: #67656F;
+  font-weight: bold;
+}
+
+.closed {
+  color: #B9C4D0;
+}
+
+button, input, select {
+  font: inherit;
+  padding: 0rem .25rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: .1rem 1.3rem;
+  background: #443F54;
+  color: #ffffff;
+  border: 1px solid #443F54;
+}
+
+h3 {
+  margin: 0 0 .75rem;
+}
+
+table {
+  text-align: right;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem 1rem;
+}
+
+#generate-confirm table > tbody > tr > th {
+  color: #4B4E5D;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#generate-pane table > tbody > tr > th {
+  color: #4B4E5D;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#buy-pane table > tbody > tr > th {
+  color: #4B4E5D;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#claim-eos-pane table > tbody > tr > th {
+  color: #4B4E5D;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.account .buttons > div.row > div.button > a.disabled {
+  color: #999999;
+  background: transparent;
+  cursor: not-allowed;
+}
+
+.account .buttons > div.row > div.button.disabled a {
+  border: 1px solid #A4A4A4;
+  opacity: 0.8;
+}
+
+.account .buttons > div.row > div.button.disabled:hover a {
+  background: transparent;
+}
+
+#sale-window {
+  background: #F8F9FA;
+  border: 1px solid #D8DEE5;
+  width: 150px;
+  height: 35px;
+}
+
+#claim-window {
+  background: #F8F9FA;
+  border: 1px solid #D8DEE5;
+  width: 150px;
+  height: 35px;
+}
+
+input[type='text'] {
+  background: #F8F9FA;
+  border: 1px solid #D8DEE5;
+  height: 40px;
+}
+
+.pane-body {
+  display: flex;
+}
+.pane-body span.highlight {
+  color: #4B4E5D;
+  font-weight: 600;
+}
+.pane-body .left-pane {
+  float: left;
+  color: #605C6D;
+  background-color: #ffffff;
+  padding: 20px 15px 20px 0px;
+  width: 40%;
+}
+.pane-body .left-pane ol {
+  line-height: 24px;
+}
+
+.pane-body .right-pane {
+  float: right;
+  width: 60%;
+  background: #FBFBFC;
+  border: 1px solid #EEF1F4;
+  padding: 20px 0px;
+}
+
+.pane-body .right-pane .pane-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 40px;
+}
+
+.pane-body .right-pane .pane-button.cancel {
+  background: #ffffff;
+  color: #5B556E;
+  border-color: #5B556E;
+  border-width: 2px;
+}
+
+.pane-body .right-pane .pane-button.cancel:hover {
+  color: #201C2C;
+  background: #ffffff;
+  border-color: #201C2C
+}
+
+.pane-body .right-pane .pane-button:hover {
+  background: #1A1724;
+  border-color: #1A1724;
+  border-style: double;
+}
+
+#claim-eos-pane .pane-body .left-pane p {
+  padding-left: 25px;
+}
+
+#generate-pane .pane-body .right-pane form {
+  padding: 0px 0px 10px 15px;
+}
